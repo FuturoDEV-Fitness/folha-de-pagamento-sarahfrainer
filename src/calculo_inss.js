@@ -22,5 +22,6 @@ function calcularInss (salarioBruto) {
     }
 
     return inss;
-
 }
+
+module.exports = calcularInss;
