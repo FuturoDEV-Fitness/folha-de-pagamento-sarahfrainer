@@ -1,14 +1,14 @@
 const calcularImpostoRenda = require("./calculo_imposto_renda");
 const calcularInss = require("./calculo_inss");
 
-const salarioBruto = 0;
+let salarioBruto = 0;
 
-const inss = calcularInss(salarioBruto);
-const impostoRenda = calcularImpostoRenda(salarioBruto);
+let inss = calcularInss(salarioBruto);
+let impostoRenda = calcularImpostoRenda(salarioBruto);
 
 function CalcularSalarioLiquido (salarioBruto, inss, impostoRenda) {
-    salarioBruto = salarioBruto - inss - impostoRenda;
-    return salarioBruto;
+    salarioLiquido = salarioBruto - inss - impostoRenda;
+    return salarioLiquido;
 }
 
 module.exports = CalcularSalarioLiquido;
