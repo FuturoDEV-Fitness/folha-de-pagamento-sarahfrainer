@@ -25,6 +25,8 @@ function calcularImpostoRenda (salarioBruto) {
     else {
         impostoRenda = (impostoRenda * 0.275) - 884.96;
     }
+    
+    return impostoRenda;
 }
 
 module.exports = calcularImpostoRenda;
